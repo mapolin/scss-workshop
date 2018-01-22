@@ -1,0 +1,13 @@
+.media-object {
+  display: flex;
+  width: calc(33% - 15px);
+
+  &__section {
+    
+  }
+
+  &__thumbnail {
+    width: 30%;
+    margin-right: 15px;
+  }
+}
