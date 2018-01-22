@@ -8,4 +8,10 @@
     border-bottom: 1px solid #cacaca;
     margin-bottom: 1.25rem;
   }
+
+  &__wrapping {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
