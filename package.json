@@ -1,0 +1,24 @@
+{
+  "name": "workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "parcel-bundler": "^1.4.1"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/parcel templates/ecommerce.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapolin/scss-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mapolin/scss-workshop/issues"
+  },
+  "homepage": "https://github.com/mapolin/scss-workshop#readme"
+}
