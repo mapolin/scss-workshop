@@ -9,7 +9,8 @@
     "parcel-bundler": "^1.4.1"
   },
   "scripts": {
-    "start": "./node_modules/.bin/parcel templates/ecommerce.html"
+    "start": "./node_modules/.bin/parcel templates/ecommerce.html",
+    "start:grid": "./node_modules/.bin/parcel templates/css-grid.html"
   },
   "repository": {
     "type": "git",
