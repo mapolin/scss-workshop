@@ -10,7 +10,8 @@
   },
   "scripts": {
     "start": "./node_modules/.bin/parcel templates/ecommerce.html",
-    "start:grid": "./node_modules/.bin/parcel templates/css-grid.html"
+    "start:grid": "./node_modules/.bin/parcel templates/css-grid.html",
+    "start:pdp": "./node_modules/.bin/parcel templates/product-page.html"
   },
   "repository": {
     "type": "git",

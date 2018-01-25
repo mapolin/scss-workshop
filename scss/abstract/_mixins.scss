@@ -1,4 +1,21 @@
-@mixin button($color) {
+@import './functions.scss';
+
+$themes: (
+  'blue': (
+    'background': #2199e8,
+    'color': #fff
+  ),
+  'red': (
+    'background': #e82121,
+    'color': rgb(255, 243, 13)
+  )
+);
+
+@mixin button($theme) {
+  $selected: map-get($themes, $theme);
+  $bg: map-get($selected, 'background');
+  $color: map-get($selected, 'color');
+
   display: inline-block;
   text-align: center;
   cursor: pointer;
@@ -9,8 +26,8 @@
   padding: .85em 1em;
   margin: 0 1rem 1rem 0;
   font-size: .9rem;
-  background: $color;
-  color: #fff;
+  background: $bg;
+  color: $color;
 
   &.expanded {
     display: block;
@@ -20,7 +37,27 @@
   }
 
   &.hollow {
-    border: 1px solid $color;
-    color: $color;
+    border: 1px solid $bg;
+    color: $bg;
+  }
+}
+
+@mixin semi-transparent-element ($color) {
+  color: get-color($color);
+}
+
+@mixin modified($name) {
+  &--#{$name} {
+    @content;
+  }
+}
+
+@mixin icon($icon) {
+  background-image: url($icon);
+  width: 30px;
+  height: 30px;
+
+  @media (max-width: 320px) {
+
   }
 }

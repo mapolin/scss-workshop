@@ -1,0 +1,13 @@
+@function get-color ($color) {
+  $new-color: rgba(red($color), green($color), blue($color), 0.5);
+  @if $color == #f00 {
+    @return #fff
+  }
+  @else {
+    @return $new-color;
+  }
+}
+
+@function adjust-font-size($fs, $factor: $global-factor) {
+  @return round($fs * $factor)
+}
