@@ -1,0 +1,19 @@
+.flex-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.grid-col {
+  @for $i from 1 through 12 {
+    &-#{$i} {
+      width: calc(100%/#{$i} - 15px);
+    }
+  }
+}
+
+.column {
+  width: 20%;
+  padding-left: 15px;
+  padding-right: 15px;
+}

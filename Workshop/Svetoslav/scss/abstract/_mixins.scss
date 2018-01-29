@@ -1,0 +1,31 @@
+@mixin button($color) {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: all .25s ease-out;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: .85em 1em;
+  margin: 0 1rem 1rem 0;
+  font-size: 1.25rem;
+  background: $color;
+  color: $white;
+  text-decoration: none;
+
+  &.expanded {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &.hollow {
+    border: 1px solid $color;
+    color: $color;
+  }
+  &.tiny {
+    font-size: .6rem;
+    background: $white;
+  }
+}

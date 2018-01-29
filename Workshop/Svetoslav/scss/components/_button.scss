@@ -1,0 +1,27 @@
+@import '../abstract/mixins.scss';
+
+.button {
+  @include button(#2199e8);
+  &-group {
+    font-size: .75rem;
+    margin-bottom: 1rem;
+  }
+  &-secondary {
+    background: #777;
+    color: #fff;
+    width: 33.33333%;
+    padding: 10px 12px;
+    text-align: center;
+    &:not(:last-child) {
+      border-right: 1px solid #fefefe;
+    }
+  }
+  &-small {
+    font-size: .75rem;
+  }
+  &-content {
+    padding: .85em 1em;
+    margin: 0 1rem 1rem 0;
+    font-size: .9rem;
+  }
+}

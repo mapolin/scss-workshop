@@ -1,0 +1,14 @@
+.product-mini {
+  width: calc(25% - 15px);
+
+  &__thumbnail {
+    border: 4px solid $wite2;
+    box-shadow: 0 0 0 1px rgba(10,10,10,.2);
+    display: inline-block;
+    line-height: 0;
+    max-width: 100%;
+    transition: box-shadow .2s ease-out;
+    border-radius: 0;
+    margin-bottom: 1rem;
+  }
+}
