@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--bordered {
+    border-bottom: 1px solid #cacaca;
+    margin-bottom: 1.25rem;
+  }
+
+  &__wrapping {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,23 @@
+* {
+  &:after, &::before {
+    box-sizing: inherit;
+  }
+}
+.flex-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.css-product-grid {
+  display: grid;
+  grid-template-columns: 50% 41%;
+  grid-column-gap: 8%;
+
+  > .medium-columns {
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 1.25rem;
+  }
+
+}
+

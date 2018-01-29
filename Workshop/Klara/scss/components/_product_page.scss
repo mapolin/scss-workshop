@@ -1,0 +1,53 @@
+@import './../abstract/mixins';
+@import './../abstract/variables';
+
+.thumbnail {
+    border: 4px solid $white_smoke;
+    box-shadow: 0 0 0 1px rgba(10,10,10,.2);
+    display: inline-block;
+    line-height: 0;
+    max-width: 100%;
+    transition: box-shadow .2s ease-out;
+    border-radius: 0;
+    margin-bottom: 1rem;
+    &:focus, &:hover {
+        box-shadow: 0 0 6px 1px rgba(33,153,232,.5);
+    }
+
+    &--img {
+        max-width: none;
+    }
+}
+
+.product-images {
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+	&__small {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-column-gap: 1.875rem;
+	}
+}
+
+.product-details {
+	width: 41.66667%;
+	padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+
+    &__title {
+    	font-size: 1.9375rem;
+    }
+
+    &__size {
+    	@include flex(column);
+    }
+
+    &__qty {
+    	@include flex(row);
+    }
+}
+
+.social-grid {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}

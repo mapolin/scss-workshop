@@ -1,0 +1,35 @@
+.breadcrumb {
+    display: flex;
+    padding-left: 15px;
+    li {
+        display: block;
+        list-style: none;
+        float: left;
+        color: #0a0a0a;
+        font-size: .6875rem;
+        cursor: default;
+        text-transform: uppercase;
+
+        &:not(:last-child)::after {
+            color: #cacaca;
+            content: "/";
+            margin: 0 .75rem;
+            position: relative;
+            top: 1px;
+            opacity: 1;
+        }
+        &.disabled {
+            color: #cacaca;
+        }
+    }
+
+    a {
+        background-color: transparent;
+        color: #2199e8;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

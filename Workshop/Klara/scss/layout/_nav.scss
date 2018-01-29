@@ -1,0 +1,33 @@
+@import './../abstract/variables';
+
+.nav-list {
+	margin: 0 0 1rem;
+
+	&__element {
+		float: left;
+    	color: $black;
+    	font-size: 0.6875rem;
+    	cursor: default;
+    	text-transform: uppercase;
+		
+		&.disabled {
+			color: $light_grey;
+		}
+		&:not(:last-child)::after {
+    		color: $light_grey;
+    		content: "/";
+    		margin: 0 .75rem;
+    		position: relative;
+    		top: 1px;
+    		opacity: 1;
+		}
+	}
+
+	&__span {
+		position: absolute!important;
+	    width: 1px;
+	    height: 1px;
+	    overflow: hidden;
+	    clip: rect(0,0,0,0);
+	}
+}

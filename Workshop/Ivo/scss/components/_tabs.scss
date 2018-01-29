@@ -1,0 +1,35 @@
+.tabs {
+    background: #fefefe;
+    transition: all .5s ease;
+    border-top: 0;
+    border: 1px solid #e6e6e6;
+
+    input[type="radio"]{
+        display:none;
+    }
+}
+.tab {
+    display: none;
+    padding: 1rem;
+}
+.tabs-menu {
+    display: flex;
+    border-bottom: 1px solid #e6e6e6;
+    > label {
+        display: block;
+        padding: 1.25rem 1.5rem;
+        line-height: 1;
+        font-size: 12px;
+        color: #2199e8;
+    }
+    &:focus, :hover {
+        background: #e6e6e6; 
+    }
+}
+#toggle-tab1:checked ~ .tabs-menu label[for="toggle-tab1"],#toggle-tab2:checked ~ .tabs-menu label[for="toggle-tab2"] {             
+    background: #e6e6e6; 
+}
+
+#toggle-tab1:checked ~ #tab1,#toggle-tab2:checked ~ #tab2 {
+    display:block;
+}

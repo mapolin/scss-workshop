@@ -1,0 +1,32 @@
+.tabs, 
+.tabs-content {
+  border: 1px solid #e6e6e6;
+}
+
+.tabs {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tabs-title {
+  display: inline-block;
+  & > a {
+    display: block;
+    padding: 1.25rem 1.5rem;
+    line-height: 1;
+    font-size: 12px;
+    color: #2199e8;
+    &[aria-selected=true] {
+      background: #e6e6e6;
+    }
+}
+}
+
+
+.tabs-panel {
+padding: 1%;
+&:not(.is-active) { 
+	display:none;
+ }
+}

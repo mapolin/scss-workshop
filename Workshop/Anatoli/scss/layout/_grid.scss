@@ -1,0 +1,21 @@
+@import './../abstract/mixins.scss';
+
+.flex-grid {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	width: 50%;
+	
+	+ .column {
+		margin-left: 80px;
+	}
+}
+
+$grid-columns: 12;
+@for $i from 1 through $grid-columns {
+  .grid-#{$i} { 
+    width: percentage($i / $grid-columns);
+  }
+}

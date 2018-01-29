@@ -1,0 +1,36 @@
+@import './../abstract/variables';
+
+.tabs {
+	margin: 0;
+	background: $white;
+	list-style-type: none;
+	padding: 0;
+	border: 1px solid $gainsboro;
+
+	&__content {
+		background: $white_smoke;
+    	transition: all .5s ease;
+    	border-top: none;
+    	border: 1px solid $gainsboro;
+	}
+
+	&__title {
+	    font-size: 1.5625rem;
+	}
+
+	&__panel {
+		display: none;
+		padding: 1rem;
+
+		&:target {
+			display: block;
+		}
+	}
+
+	&__link {
+		display: block;
+    	padding: 1.25rem 1.5rem;
+    	line-height: 1;
+    	font-size: 12px;
+	}
+}

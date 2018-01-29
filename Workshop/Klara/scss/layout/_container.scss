@@ -1,0 +1,13 @@
+@import '../abstract/variables';
+
+.container {
+	width: 100%;
+  	max-width: 75rem;
+ 	margin-left: auto;
+  	margin-right: auto;
+
+  	&--bordered {
+    	border-bottom: 1px solid $light_grey;
+   		margin-bottom: 1.25rem;
+  	}
+}

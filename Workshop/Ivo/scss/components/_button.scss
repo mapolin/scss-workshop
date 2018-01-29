@@ -1,0 +1,18 @@
+@import './../abstract/mixins.scss';
+
+.button {
+  @include button();
+}
+
+.button--grey {
+  background: #777;
+  color: #fff;
+
+  &:hover {
+    background: #5f5f5f;
+  }
+}
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+}

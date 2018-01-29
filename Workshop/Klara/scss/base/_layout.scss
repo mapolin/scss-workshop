@@ -1,0 +1,121 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: inherit;
+    margin-bottom: .5rem;
+    line-height: 1.4;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.label {
+	display: block;
+    margin: 0;
+    font-size: .875rem;
+    line-height: 1.8;
+    color: #0a0a0a;
+    font-weight: 400;
+
+    &--middle {
+    	padding: 0.5625rem 0;
+    }
+}
+
+select {
+	height: 2.4375rem;
+    padding: .5rem;
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    line-height: normal;
+    color: $suva_grey;
+    background-color: $grey;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-size: 9px 6px;
+    background-position: right .5rem center;
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.…gon points="0,0 32,0 16,24" style="fill: rgb(51, 51, 51)"></polygon></svg>');
+    width: 100%;
+    border: 1px solid $light_grey;
+    text-transform: none;
+}
+
+[type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=tel], [type=time], [type=url], [type=color], [type=number], [type=search], textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.4375rem;
+    padding: .5rem;
+    border: 1px solid $light_grey;
+    margin: 0 0 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    color: $suva_grey;
+    background-color: $white_smoke;
+    box-shadow: inset 0 1px 2px rgba(10,10,10,.1);
+    border-radius: 0;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+@for $i from 0 through 100 {
+  $value: $i + 5;
+
+	.width-#{$value} {
+		width: percentage($value/100);
+	}
+}
+
+
+p {
+	line-height: 1.6;
+}
+
+a {
+	background-color: transparent;
+    color: $dodger_blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+small {
+    font-size: 80%;
+}
+
+textarea {
+    min-height: 50px;
+    max-width: 100%;
+    overflow: auto;
+    font: inherit;
+}
+
+li {
+    font-size: inherit;
+}
+
+ul {
+    list-style: none;
+}

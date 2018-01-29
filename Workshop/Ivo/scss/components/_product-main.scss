@@ -1,0 +1,25 @@
+.product-main {
+  &__image {
+    border: 4px solid #fefefe;
+    box-shadow: 0 0 0 1px rgba(10,10,10,.2);
+    display: inline-block;
+    line-height: 0;
+    max-width: 100%;
+    transition: box-shadow .2s ease-out;
+    border-radius: 0;
+  }
+  &__thumbnails {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 75rem;
+    margin: 1rem auto;
+  }
+  &__thumbnail {
+    width: calc(25% - 1.8rem);
+    &:hover {
+      box-shadow: 0 0 6px 1px rgba(33, 153, 232, 0.5);
+    }
+  }
+}
+

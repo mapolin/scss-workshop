@@ -1,0 +1,45 @@
+.button {
+	@include button();
+
+	&--large {
+		font-size: 1.25rem;
+	}
+
+	&.expanded {
+		display: block;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	&.hollow {
+		border: 1px solid $dodger_blue;
+    	color: $dodger_blue;
+	   	background: 0 0;
+    	&:hover {
+    	    border-color: $dark_blue;
+	   		color: $dark_blue;
+    	}
+	}
+
+	&--grey {
+		background: $dark_grey;
+    	color: $white;
+	}
+
+	&--size-inherit {
+		font-size: inherit;
+	}
+
+	&.tiny {
+		font-size: 0.6rem;
+	}
+
+	$border-position: right left top bottom;
+
+	@each $position in $border-position {
+		&--border-#{$position}-white {
+	      border-#{$position}: 1px solid $white_smoke;
+	    }
+	 }
+}

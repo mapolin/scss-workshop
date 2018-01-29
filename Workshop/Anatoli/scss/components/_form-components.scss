@@ -1,0 +1,48 @@
+.button {
+    @include button(#4286f4);
+}
+
+.input-text{
+	@include input-text();
+}
+
+.button-group {
+	.button {
+		@include button(#8b8e93);
+		width: 33%;
+		margin: 0;
+	}
+}
+
+.label {
+	display: block;
+    margin: 0;
+    font-size: .875rem;
+    line-height: 1.8;
+    color: #0a0a0a;
+	
+	&-qty {
+		margin: 0 0 1rem;
+		padding: .5625rem 0;
+	}
+}
+
+.dropdown {
+	width: 100%;
+	height: 2.4375rem;
+	padding: .5rem;
+	margin: 0 0 1rem;
+	font-size: 1rem;
+	font-family: inherit;
+	line-height: normal;
+	color: #8a8a8a;
+	background-color: #fafafa;
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+ 
+textarea {
+    min-height: 50px;
+    width: 100%;
+	margin-bottom: 10px;
+}

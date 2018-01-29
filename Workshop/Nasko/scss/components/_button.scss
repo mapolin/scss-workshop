@@ -1,0 +1,10 @@
+@import './../abstract/mixins.scss';
+
+.button {
+  @include button(#2199e8);
+}
+
+.button--gray {
+    @include button(#777);
+}
+

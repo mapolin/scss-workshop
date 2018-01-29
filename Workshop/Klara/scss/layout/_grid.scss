@@ -1,0 +1,19 @@
+.flex-grid {
+	display: flex;
+	justify-content: space-between;
+}
+
+.social-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.table-grid {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
