@@ -1,0 +1,43 @@
+.flex-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.css-grid {
+  min-height: 100vh;
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 25px auto 2fr 45px;
+  grid-template-areas: 
+    ". . . promo"
+    "header header header header"
+    "sidebar content content content"
+    ". footer footer .";
+
+  &__header {
+    grid-area: header;
+    background: blanchedalmond;
+  }
+
+  &__content {
+    grid-area: content;
+    background: aliceblue;
+  }
+
+  &__footer {
+    grid-area: footer;
+    background: dodgerblue;
+  }
+
+  &__sidebar {
+    grid-area: sidebar;
+    background: tomato;
+  }
+
+  &__promo {
+    grid-area: promo;
+    background: chocolate;
+  }
+}

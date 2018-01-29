@@ -1,0 +1,16 @@
+@import '../abstract/mixins.scss';
+
+.button {
+    @include button(#2199e8);
+}
+
+.button-product {
+    @include button(#2199e8, none);
+}
+
+.button-social {
+    @include button(#777, none, 0.75);
+    flex-grow: 1;
+    margin: 0 1px 0 0;
+    font-size: 0.75rem;
+}

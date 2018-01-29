@@ -1,0 +1,14 @@
+.review {
+    display: flex;
+    margin-bottom: 2rem;
+
+    &__img {
+        @extend %thumb-img;
+        width: 200px;
+        max-width: 200px;
+    }
+
+    &__text {
+        margin-left: 1rem;
+    }
+}

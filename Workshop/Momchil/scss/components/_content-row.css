@@ -1,0 +1,13 @@
+@import '../abstract/mixins.scss';
+
+.content-row {
+    @extend %content-row;
+
+    &--bordered {
+        border: 1px solid rgb(230, 230, 230);
+    }
+
+    &__item:not(:last-child) {
+        border-bottom: 1px solid rgb(230, 230, 230);
+    }
+}

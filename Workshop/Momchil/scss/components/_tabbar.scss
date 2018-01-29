@@ -1,0 +1,26 @@
+.tabbar {
+    display: flex;
+
+    &__tab {
+        display: inline-block;
+        padding: 1.25rem 1.5rem;
+        line-height: 1;
+        font-size: 12px;
+
+        &--active, &:hover {
+            background-color: #e6e6e6;
+        }
+    }
+}
+
+.tab-content {
+    padding: 1rem;
+}
+
+.tab-pane {
+    display: none;
+
+    &--active {
+        display: block;
+    }
+}
