@@ -2,6 +2,7 @@
 
 .button {
   @include button(#2199e8);
+
   &-group {
     font-size: .75rem;
     margin-bottom: 1rem;
